@@ -9,7 +9,7 @@
 }
 
 .menu a {
-  font-size: 30px;
+  font-size: 15px;
   font-family: "Roboto Serif", serif;
   text-decoration: none;
   color: black;
@@ -22,7 +22,11 @@
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 h3, h1 {
@@ -31,46 +35,74 @@ h3, h1 {
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 15px;
   font-style: italic;
+}
+
+p {
+  font-size: 10px;
 }
 
 .container {
   position: relative;
-  min-height: 1000px;
-  min-width: 70%;
+  min-height: 500px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: #DEEDFF url(image/pejsek4.png) no-repeat center/contain;
-}
-
-.container::before {
-  background: #DEEDFF url(image/pejsek4.png) no-repeat center/contain;
-  filter: blur(3px);
-  content: "";
-  position: absolute;
+  background: url(image/pejsek4.png) no-repeat center/contain;
 }
 
 .container__firt {
-  width: 600px;
-  height: 400px;
+  width: 500px;
+  height: 100px;
   text-align: center;
   background: white;
-  font-size: 28px;
+  font-size: 20px;
   margin-top: 50px;
+  margin-bottom: 5px;
+  align-content: center;
+  align-items: center;
 }
 
 .container__second {
-  width: 600px;
-  height: 400px;
+  align-content: center;
+  width: 500px;
+  height: 100px;
   text-align: center;
   background: white;
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 
 .footer {
   text-align: center;
+  background-color: #DEEDFF;
+}
+
+.footer p {
+  font-size: 9px;
+}
+
+@media screen and (min-width: 640px) {
+  h1,
+h3,
+p {
+    font-size: 15px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container__firt,
+.container__second {
+    width: 100px;
+    height: 100px;
+    background-color: #DEEDFF;
+    justify-content: center;
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
